@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources - DailyGamer</title>
+    <link rel="stylesheet" href="DG_DesignP3.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Educational Resources</h1>
+            <nav>
+                <ul>
+                    <li><a href="DG_HomePage.html">Home</a></li>
+                    <li><a href="DG_NewReleases.html">New Releases</a></li>
+                    <li><a href="DG_ReviewsAndComparisons.html">Reviews and Comparisons</a></li>
+                    <li><a href="DG_FeaturedContent2.html">Featured Content</a></li>
+                    <li><a href="DG_EducationalResources.html">Educational Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="educational-content">
+            <h2>Educational Content</h2>
+            <div class="article">
+                <h3>History of Video Games</h3>
+                <p>From their inception in the 1950s to the present, electronic games have evolved, as chronicled in the history of video games. In the 1950s, basic games like "Tennis for Two" and "Spacewar!" were the first to catch on, and in the 1970s, arcade games like "Pong" and "Space Invaders" were increasingly popular. Due to the introduction of home gaming systems in the 1980s, such as the Atari 2600 and Nintendo Entertainment System (NES), the video game business crashed in 1983.</p>
+                <p>Even yet, the industry recovered in the late 1980s and early 1990s thanks to the introduction of classic titles like "Super Mario Bros." and "The Legend of Zelda." With the advent of 3D games and online multiplayer, the 2000s saw improvements in graphics and gameplay. Video games have become a worldwide phenomenon in recent times, spanning multiple genres and platforms such as consoles, PCs, mobile devices, and virtual reality.</p>
+                <p>Examine the development of gaming technology, significant turning points, and games that have influenced the industry.</p>
+            </div>
+            <div class="article">
+                <h3>Game Design Principles</h3>
+                <p>Discover the underlying ideas of game design, such as dynamics, physics, and aesthetics. Learn how careful design decisions are used by game designers to give users immersive, interesting experiences.</p>
+            </div>
+            <div class="article">
+                <h3>Video Game Genres</h3>
+                <p>Discover the wide range of genres available in video games, including role-playing, simulation, and action and adventure. Learn the traits and gameplay elements that characterize each genre and find well-known instances.</p>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest news, articles, and educational content about video games by subscribing to our monthly newsletter.</p>
+            <form action="#" method="post" id="newsletter-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DailyGamer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for handling form submission (subscribe to newsletter)
+        document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            // You can add your logic here to handle the form submission (e.g., sending data to a server)
+            alert('Thank you for subscribing!');
+            document.getElementById('name').value = ''; // Clear the input fields after submission
+            document.getElementById('email').value = '';
+        });
+    </script>
+</body>
+</html>
